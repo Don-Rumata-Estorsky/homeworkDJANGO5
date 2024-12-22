@@ -1,0 +1,25 @@
+
+
+
+python -m venv venv 
+.\venv\scripts\activate
+
+pip install django
+
+django-admin startproject nameofproject
+    cd nameofproject
+django-admin staetapp nameofapp
+
+python ./manage.py makemigration 
+python ./manage.py migrate
+python ./manage.py createsuperuser
+    login: admin, password: admin.
+python ./manage.py runserver
+
+ pip freezee 
+
+1) в settings INSTALLED_APPS добавить 'nameofapp'
+2) в nameofapp создать 'templates' для html
+3) добавить в urls:   path('admin/', admin.site.urls),
+
+
